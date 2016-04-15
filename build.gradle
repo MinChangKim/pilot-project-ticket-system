@@ -10,6 +10,29 @@ buildscript {
 	}
 }
 
+plugins {
+	id "com.ewerk.gradle.plugins.querydsl" version "1.0.3"
+}
+
+ext {
+	querydslVersion = '3.7.2'
+	querydslSrcDir = 'src/main/generated'
+}
+
+querydsl {
+	library = "com.mysema.querydsl:querydsl-apt:$querydslVersion"
+	jpa=true
+	querydslSourcesDir = querydslSrcDir
+}
+
+sourceSets {
+	main {
+		java {
+			srcDirs = ['src/main/java', querydslSrcDir]
+		}
+	}
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot' 
@@ -29,6 +52,9 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.projectlombok:lombok:1.16.6')
+	compile("com.mysema.querydsl:querydsl-jpa:$querydslVersion")
+	compile("com.mysema.querydsl:querydsl-apt:$querydslVersion")
 	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
