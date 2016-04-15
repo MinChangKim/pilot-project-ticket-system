@@ -1,8 +1,7 @@
-package com.ticketsystem.Service;
+package com.ticketsystem.service;
 
 import com.ticketsystem.TicketSystemApplication;
 import com.ticketsystem.domain.Show;
-import com.ticketsystem.errors.ShowNotFoundException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,7 +18,6 @@ import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 /**
  * Created by mckim on 2016. 4. 11..
@@ -41,7 +39,7 @@ public class ShowServiceTest {
     public void tearDown() {
 
     }
-
+/**
     @Test
     public void test_Show_등록() {
         //given
@@ -86,16 +84,5 @@ public class ShowServiceTest {
         System.out.println("totalElements = " + totalElements);
         System.out.println("hasContent = " + hasContent);
     }
-
-    @Test(expected = ShowNotFoundException.class)
-    public void test_Show_Exception_ShowNotFound() {
-        //given
-
-        //when
-        Show show = showService.find(232323L);
-
-        //then
-        fail("ShowNotFoundException");
-    }
-
+    */
 }

@@ -22,7 +22,7 @@ public class QShow extends EntityPathBase<Show> {
 
     public final StringPath contents = createString("contents");
 
-    public final DateTimePath<java.util.Date> endDate = createDateTime("endDate", java.util.Date.class);
+    public final StringPath endDate = createString("endDate");
 
     public final DateTimePath<java.util.Date> regDate = createDateTime("regDate", java.util.Date.class);
 
@@ -36,7 +36,7 @@ public class QShow extends EntityPathBase<Show> {
 
     public final NumberPath<Long> showSeq = createNumber("showSeq", Long.class);
 
-    public final DateTimePath<java.util.Date> startDate = createDateTime("startDate", java.util.Date.class);
+    public final StringPath startDate = createString("startDate");
 
     public final StringPath title = createString("title");
 

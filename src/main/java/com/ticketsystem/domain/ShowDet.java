@@ -69,6 +69,4 @@ public class ShowDet {
     @JoinColumn(name = "showSeq")
     private Show show;
 
-
-
 }

@@ -39,10 +39,10 @@ public class Show {
     private String title;    //공연제목
 
     @Column(name = "START_DATE")
-    private Date startDate;   //공연기간시작일
+    private String startDate;   //공연기간시작일
 
     @Column(name = "END_DATE")
-    private Date endDate;     //공연기간종료일
+    private String endDate;     //공연기간종료일
 
     @Column(name = "RUNNING_TIME")
     private String runningTime;   //러닝타임

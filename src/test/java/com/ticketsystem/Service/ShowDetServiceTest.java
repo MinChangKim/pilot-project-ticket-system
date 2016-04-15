@@ -1,4 +1,4 @@
-package com.ticketsystem.Service;
+package com.ticketsystem.service;
 
 import com.ticketsystem.TicketSystemApplication;
 import com.ticketsystem.domain.Show;
@@ -35,6 +35,7 @@ public class ShowDetServiceTest {
 
     }
 
+    /**
     @Test
     public void test_ShowDet_등록() {
 
@@ -68,4 +69,5 @@ public class ShowDetServiceTest {
         assertEquals(createShow.getShowCd(), createShowDet.getShowCd());
 
     }
+    */
 }

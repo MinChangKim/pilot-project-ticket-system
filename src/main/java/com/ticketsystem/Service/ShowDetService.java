@@ -1,24 +1,13 @@
-package com.ticketsystem.Service;
+package com.ticketsystem.service;
 
 import com.ticketsystem.domain.ShowDet;
-import com.ticketsystem.repository.ShowDetRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 /**
  * Created by mckim on 2016. 4. 12..
  */
-@Service
-public class ShowDetService {
+public interface ShowDetService {
 
-    @Autowired
-    private ShowDetRepository showDetRepository;
+    ShowDet save(ShowDet showDet);
 
-    public ShowDet save(ShowDet showDet) {
-        return showDetRepository.save(showDet);
-    }
-
-    public ShowDet read(Long id) {
-        return showDetRepository.findOne(id);
-    }
+    ShowDet find(Long id);
 }

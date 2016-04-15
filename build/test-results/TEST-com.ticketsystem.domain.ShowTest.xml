@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ticketsystem.domain.ShowTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-14T01:45:20" hostname="gimminchang-ui-MacBook-Pro.local" time="0.039">
+<testsuite name="com.ticketsystem.domain.ShowTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-15T08:12:15" hostname="gimminchang-ui-MacBook-Pro.local" time="0.003">
   <properties/>
-  <testcase name="test_엔티티생성" classname="com.ticketsystem.domain.ShowTest" time="0.039"/>
+  <testcase name="test_엔티티생성" classname="com.ticketsystem.domain.ShowTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
